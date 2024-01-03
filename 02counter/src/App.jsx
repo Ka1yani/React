@@ -1,17 +1,21 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   let [counterA, setcounter] = useState(0)
   //let counter = 15
+
   let addValue = () => {
+    
     if(isNaN(counterA)) {
       counterA = 0
       setcounter(counterA)
       addValue()
     } else {
+    setcounter(prevcounterA => prevcounterA +1)
+    setcounter(prevcounterA => prevcounterA +1)
+    setcounter(prevcounterA => prevcounterA +1)
+    setcounter(prevcounterA => prevcounterA +1)
     counterA = counterA +1
     setcounter(counterA)
     console.log("Add", counterA)
